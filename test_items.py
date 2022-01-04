@@ -9,8 +9,7 @@ import pytest
 from selenium import webdriver
 import time
 
-@pytest.mark.parametrize('language', ["ru"])    #, "es", "en"
-def test_find_card_button(browser, language):
+def test_find_card_button(browser):
     try: 
         link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
         browser.get(link)
